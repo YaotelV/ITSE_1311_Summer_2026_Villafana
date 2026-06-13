@@ -1,1 +1,0 @@
-echo "Meet Blaze, the fearless pixel hero."
