@@ -6,7 +6,7 @@
 
 html{
     background-image: url(../restaurant-site/images/background.png);
-
+    background-size: 30%;
 }
 
 
@@ -14,11 +14,17 @@ body{
     display: block;
 }
 
+header{
+    text-align: center;
+    align-content: center;
+    background-color: rgb(255, 219, 110);
+    max-width: 100%;
+}
+
 header > img{
-    max-width: 25%;
     display: flex;
-    align-content: flex-start;
-    justify-content: center;
+    align-self: flex-start;
+    justify-self: center;
 }
 
 /* Nav Styles */
@@ -36,4 +42,28 @@ nav.horizontal ul {
 nav.horizontal ul > li{
     list-style-type: none;
     display: flex;
+}
+
+
+
+
+
+/*Mobile Devices: 0 to 480px*/
+@media only screen and (max-width: 480px) {
+   header > img {
+      max-height: 10em;
+      min-height: auto;
+   }
+
+
+}
+
+/*Mobile Devices: 0 to 480px*/
+@media only screen and (min-width: 481px) {
+   header > img {
+      max-height: 25em;
+      min-height: auto;
+   }
+
+
 }
