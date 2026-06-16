@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+/* I chose these colors because I wanted to go for a more "cute and cozy" vibe.
+   so I chose some softer pastel colors to make the brand seem relaxed but welcoming
+    with a bit of happy, excited energy.*/
+
 /* Fonts */
 
 @font-face {
@@ -60,11 +64,7 @@ font-family: Ribeye Marrow;
     margin-top: -20px;
 }
 
-p{
-    font-family: Patrick Hand;
-    color: rgb(15, 179, 197);
-    font-size: 20px;
-}
+
 
 header > img{
     display: flex;
@@ -115,6 +115,12 @@ nav.horizontal ul > li > a:focus{
 
 /* Article Styles */
 
+p, form{
+    font-family: Patrick Hand;
+    color: rgb(15, 179, 197);
+    font-size: 20px;
+}
+
 #paragraphs{
     background-color: aliceblue;
     border-style: solid;
@@ -143,9 +149,9 @@ section > img{
     border-radius: 16px;
     border-width: 5px;
     box-shadow: rgba(40, 16, 77, 0.358) 1px 0px 0px, rgba(40, 16, 77, 0.358) -1px 0px 5px;
-    margin: 5em;
-    padding: 1em;
     text-align: center;
+    padding: 2em;
+    margin: 2em;
 }
 
 #table{
@@ -156,8 +162,8 @@ section > img{
     border-color: rgb(27, 211, 231);
     border-radius: 16px;
     border-collapse: collapse;
-    padding: 2em;
-    margin: 2em;
+    padding: 1em;
+    margin: 3em;
 }
 
 th, td {
@@ -184,6 +190,30 @@ th, td {
     text-align: center;
 }
 
+form{
+    background-color: aliceblue;
+    border-style: solid;
+    border-color: rgb(27, 211, 231);
+    border-radius: 16px;
+    border-width: 5px;
+    box-shadow: rgba(40, 16, 77, 0.358) 1px 0px 0px, rgba(40, 16, 77, 0.358) -1px 0px 5px;
+    margin: 3em;
+    padding: 1em;
+    max-height: fit-content;
+    justify-self: center;
+}
+
+input[type=submit], input[type=reset]{
+    background-color: rgb(27, 211, 231);
+    border-color: rgb(15, 179, 197);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    font-family: Patrick Hand;
+    color: aliceblue;
+    font-size: 20px;
+}
+
 /* Footer Styles */
 
 footer{
@@ -208,6 +238,7 @@ footer{
 footer > h2{
     align-self: center;
     color: aliceblue;
+    margin-top: -1em;
 }
 
 footer > a{
@@ -232,16 +263,68 @@ footer > a:focus{
       max-height: 9em;
       min-height: auto;
    }
+   h1{
+    font-size: 35px;
+   }
+   h2{
+    font-size: 25px;
+   }
 
+   h3{
+    font-size: 20px;
+   }
 
+   footer{
+    font-size: 20px;
+   }
+
+   th, td{
+    font-size: 20px;
+   }
+
+   #menu{
+    max-width: 100vw;
+    margin: 0em;
+    padding: 1em;
+   }
+
+   #paragraphs{
+    max-width: 100vw;
+    margin-top: 3px;
+    padding: 1em;
+   }
+
+   #table{
+    max-width: 100vw;
+   }
+
+   section > img{
+    max-width: 50%;
+    margin: 5px;
+    border-width: 3px;
+   }
 }
 
-/*Mobile Devices: 0 to 480px*/
+/*Mobile Devices: 481px+ */
 @media only screen and (min-width: 481px) {
    header > img {
       max-height: 20em;
       min-height: auto;
    }
 
+   h1{
+    font-size: 55px;
+   }
+   h2{
+    font-size: 35px;
+   }
+
+   h3{
+    font-size: 25px;
+   }
+
+   footer{
+    font-size: 25px;
+   }
 
 }
