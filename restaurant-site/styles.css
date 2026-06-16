@@ -211,19 +211,19 @@ footer > h2{
 }
 
 footer > a{
-    color: rgb(170, 246, 255);
-}
-
-footer > a:hover{
     color: rgb(255, 234, 131);
 }
 
-footer > a:active{
+footer > a:hover{
     color: rgb(170, 246, 255);
 }
 
+footer > a:active{
+    color: rgb(255, 234, 131);
+}
+
 footer > a:focus{
-    color: rgb(170, 246, 255);
+    color: rgb(255, 234, 131);
 }
 
 /*Mobile Devices: 0 to 480px*/
