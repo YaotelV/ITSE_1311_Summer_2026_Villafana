@@ -72,6 +72,16 @@ nav.horizontal ul > li{
     padding: 1em;
 }
 
+section > img{
+    max-width: 25%;
+    margin: 1em;
+    border-color: rgb(27, 211, 231);
+    border-radius: 16px;
+    border-width: 5px;
+    border-style: solid;
+    box-shadow: rgba(40, 16, 77, 0.432) 1px 0px 0px, rgba(40, 16, 77, 0.432) -1px 0px 5px;
+}
+
 #menu{
     background-color: aliceblue;
     border-style: solid;
