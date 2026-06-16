@@ -68,8 +68,39 @@ nav.horizontal ul > li{
     border-radius: 16px;
     border-width: 5px;
     box-shadow: rgba(40, 16, 77, 0.358) 1px 0px 0px, rgba(40, 16, 77, 0.358) -1px 0px 5px;
+    margin: 3em;
+    padding: 1em;
+}
+
+#menu{
+    background-color: aliceblue;
+    border-style: solid;
+    border-color: rgb(27, 211, 231);
+    border-radius: 16px;
+    border-width: 5px;
+    box-shadow: rgba(40, 16, 77, 0.358) 1px 0px 0px, rgba(40, 16, 77, 0.358) -1px 0px 5px;
     margin: 5em;
     padding: 1em;
+    text-align: center;
+}
+
+#table{
+    justify-self: center;
+    justify-content: space-around;
+}
+
+#articleHeadings{
+    background-color: aliceblue;
+    border-style: solid;
+    border-color: rgb(27, 211, 231);
+    border-radius: 16px;
+    border-width: 5px;
+    box-shadow: rgba(40, 16, 77, 0.358) 1px 0px 0px, rgba(40, 16, 77, 0.358) -1px 0px 5px;
+    margin: 1em;
+    padding: 1em;
+    max-width: fit-content;
+    justify-self: center;
+    text-align: center;
 }
 
 /* Footer Styles */
@@ -98,7 +129,7 @@ footer > h2{
 /*Mobile Devices: 0 to 480px*/
 @media only screen and (max-width: 480px) {
    header > img {
-      max-height: 10em;
+      max-height: 9em;
       min-height: auto;
    }
 
@@ -108,7 +139,7 @@ footer > h2{
 /*Mobile Devices: 0 to 480px*/
 @media only screen and (min-width: 481px) {
    header > img {
-      max-height: 25em;
+      max-height: 20em;
       min-height: auto;
    }
 
