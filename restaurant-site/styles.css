@@ -329,4 +329,10 @@ footer > a:focus{
     font-size: 25px;
    }
 
+   section > img{
+    max-width: 25%;
+    margin: 5px;
+    border-width: 3px;
+   }
+
 }
