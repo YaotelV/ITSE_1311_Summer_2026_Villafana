@@ -19,18 +19,11 @@
 } 
 
 /* Main Styles */
-
-html{
-    background-image: url(../restaurant-site/images/background.png);
-    background-size: 30%;
-    max-width: 100vw;
-    
-}
-
-
 body{
     display: flex;
     flex-direction: column;
+    background-image: url(../restaurant-site/images/background.png);
+    background-size: 30%;
 }
 
 header{
@@ -46,26 +39,20 @@ header{
  
 }
 
-h1{
+header > h1{
     font-family: Ribeye Marrow;
     color: aliceblue;
     font-size: 55px;
     margin-top: -15px;
 }
 
-h2{
-    font-family: Ribeye Marrow;
-    color: rgb(15, 179, 197);
-    font-size: 35px;
-}
-
-h3{
+header > h3{
 font-family: Ribeye Marrow;
     color: aliceblue;
     font-size: 25px;
-    margin-top: -20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
-
 
 
 header > img{
@@ -75,7 +62,7 @@ header > img{
 }
 
 /* Nav Styles */
-nav.horizontal ul {
+.nav {
     justify-content: space-around;
     background-color: rgb(255, 177, 86);
     border-color: rgb(255, 234, 131);
@@ -83,36 +70,27 @@ nav.horizontal ul {
     border-width: 5px;
     border-style: solid;
     box-shadow: rgba(40, 16, 77, 0.358) 1px 0px 0px, rgba(40, 16, 77, 0.358) -1px 0px 5px;
-    height: 3em;
+    height: 4em;
     max-width: 100%;
     display: flex;
     text-align: start;
     align-items: center;
     align-self: flex-start;
-}
 
-nav.horizontal ul > li{
+}
+li.nav-item, a.nav-link{
     list-style-type: none;
     display: flex;
     font-family: Patrick Hand;
     font-size: 25px;
-}
-
-nav.horizontal ul > li > a{
     color: rgb(255, 234, 131);
 }
 
-nav.horizontal ul > li > a:hover{
+
+a.nav-link:hover{
     color: rgb(255, 246, 201);
 }
 
-nav.horizontal ul > li > a:active{
-    color: rgb(255, 234, 131);
-}
-
-nav.horizontal ul > li > a:focus{
-    color: rgb(255, 234, 131);
-}
 
 
 /* Article Styles */
@@ -132,6 +110,12 @@ p, form{
     box-shadow: rgba(40, 16, 77, 0.358) 1px 0px 0px, rgba(40, 16, 77, 0.358) -1px 0px 5px;
     margin: 3em;
     padding: 1em;
+}
+
+#paragraphs > h2{
+    font-family: Ribeye Marrow;
+    color: rgb(15, 179, 197);
+    font-size: 35px;
 }
 
 section > img{
@@ -227,7 +211,6 @@ footer{
     box-shadow: rgba(40, 16, 77, 0.358) 1px 0px 0px, rgba(40, 16, 77, 0.358) -1px 0px 5px;
     padding: 3em;
     max-width: 100vw;
-    height: 5em;
     text-align: center;
     align-content: flex-end;
     justify-content: space-around;
@@ -278,6 +261,7 @@ footer > a:focus{
 
    footer{
     font-size: 20px;
+    height: 10em;
    }
 
    th, td{
@@ -325,13 +309,19 @@ footer > a:focus{
     font-size: 25px;
    }
 
+   #paragraphs{
+    padding: 2em;
+    margin: 4em;
+   }
+
    footer{
     font-size: 25px;
+    height: 5em;
    }
 
    section > img{
-    max-width: 25%;
-    margin: 5px;
+    max-width: 19%;
+    margin: 6px;
     border-width: 3px;
    }
 
