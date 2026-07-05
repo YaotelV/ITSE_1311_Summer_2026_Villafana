@@ -19,6 +19,7 @@
 } 
 
 /* Main Styles */
+
 body{
     display: flex;
     flex-direction: column;
@@ -112,7 +113,7 @@ p, form{
     padding: 1em;
 }
 
-#paragraphs > h2{
+#paragraphs > h2, #articleHeadings > h2, #menu > h2 {
     font-family: Ribeye Marrow;
     color: rgb(15, 179, 197);
     font-size: 35px;
@@ -140,7 +141,7 @@ section > img{
     margin: 2em;
 }
 
-#table{
+.table{
     justify-self: center;
     justify-content: space-around;
     border: 5px;
