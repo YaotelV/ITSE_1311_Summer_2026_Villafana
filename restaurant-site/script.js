@@ -61,7 +61,7 @@ function buildFoodMenu(data) {
 }
 
 document.getElementById("reservationForm").addEventListener("submit", function(e) {
-    e.preventDefault(); // Prevent form submission
+    e.preventDefault();
 
     const errors = [];
 
