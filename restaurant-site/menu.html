@@ -26,44 +26,67 @@
                 </li>
             </ul>
 	</header>
-    <article>
-    <section id="articleHeadings">
-        <h2>Our Menu</h2>
-    </section>
-    <section id="menu">
-        <h2>Drinks</h2>
-        <img src="../restaurant-site/images/jugoslocos-QD4yCjlD44A-unsplash.jpg" alt="a picture of four beverages offered at Steam & Snout's Cafe."/><br />
-        <caption>Our list of hot and cold beverages!</caption>
-        <table class ="table table-striped">
-            <tr class="bg-info">
-                <th>Item</th>
-                <th>Notes</th>
-                <th>Price</th>
-                <th>Category</th>
-            </tr>
-            <tbody id="DrinksTable">
+     <article>
+        <section id="articleHeadings">
+            <h2>Our Menu</h2>
+        </section>
 
-            </tbody>
-        </table>
-    </section>
 
-    <section id="menu">
-        <h2>Food</h2>
-        <img src="../restaurant-site/images/ed-bvNUa2tr32s-unsplash.jpg" alt="a picture of four beverages offered at Steam & Snout's Cafe."/><br />
-        <caption>Our selection of snacks and treats!</caption>
-		<table class ="table table-striped">
-            <tr class="bg-info">
-                <th>Item</th>
-                <th>Notes</th>
-                <th>Price</th>
-                <th>Category</th>
-            </tr>
-            <tbody id="FoodTable">
+        <section class="container mb-4">
+            <label class="form-label" style="font-family: Patrick Hand; color: rgb(15,179,197); font-size: 22px;">
+                Filter by Category
+            </label>
+            <select id="categoryFilter" class="form-select">
+                <option value="All">All</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+            </select>
+        </section>
 
-            </tbody>
-        </table>
-    </section>
+        <section id="menu">
+            <h2>Drinks</h2>
+            <img src="../restaurant-site/images/jugoslocos-QD4yCjlD44A-unsplash.jpg"
+                 alt="a picture of four beverages offered at Steam & Snout's Cafe."/><br />
+            <caption>Our list of hot and cold beverages!</caption>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr class="bg-info">
+                        <th>Item</th>
+                        <th>Notes</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody id="DrinksTable"></tbody>
+            </table>
+        </section>
+
+        <section id="menu">
+            <h2>Food</h2>
+            <img src="../restaurant-site/images/ed-bvNUa2tr32s-unsplash.jpg"
+                 alt="a picture of food offered at Steam & Snout's Cafe."/><br />
+            <caption>Our selection of snacks and treats!</caption>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr class="bg-info">
+                        <th>Item</th>
+                        <th>Notes</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody id="FoodTable"></tbody>
+            </table>
+        </section>
+
+       <div class="text-center mt-4">
+            <a href="../restaurant-site/cart.html" id="viewCartBtn" class="btn btn-primary">View Cart</a>
+        </div>
     </article>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="../restaurant-site/script.js" defer></script>
 </body>

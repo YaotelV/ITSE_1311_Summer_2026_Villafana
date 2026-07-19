@@ -201,6 +201,12 @@ input[type=submit], input[type=reset]{
     font-size: 20px;
 }
 
+button#cancelOrder, button#submitOrder, #viewCartBtn {
+    margin-bottom: 1em;
+    font-family: Patrick Hand;
+    font-size: 20px;
+}
+
 /* Footer Styles */
 
 footer{
